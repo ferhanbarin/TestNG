@@ -57,6 +57,7 @@ public class C03_DependsOnTest {
         Assert.assertTrue(driver.getTitle().contains("Nutella"), "Nutella icin arama yapilamiyor.");
     }
 
+    // Eger 3 test veya daha fazlasi birbirine dependsOn ile baglandiysa 3.yü calistirmak istedigimizde zincir reaksiyon calisip 1.ye GITMEZ.
     @Test (dependsOnMethods = "test2")
     public void test3() {
 
