@@ -27,7 +27,7 @@ public class C04_WindowHandle extends TestBase {
         softAssert.assertTrue(driver.findElement(By.tagName("h3")).getText().equals("Opening a new window"), "Text istendigi gibi degil.");
         softAssert.assertTrue(driver.getTitle().contains("The Internet"), "1. sayfanin title istenen degerden farkli.");
 
-
+        driver.switchTo().window("");
 
         driver.findElement(By.linkText("Click Here")).click();
 
