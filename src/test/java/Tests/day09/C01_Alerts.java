@@ -12,6 +12,9 @@ import java.util.concurrent.TimeUnit;
 
 public class C01_Alerts {
 
+    // Her Alert JS Allert degildir. Allert ciktiginda sag click yapip incele diyebiliyorsak bu bir HTML alert'dir.
+    // HTML alert'ler siradan WebElement'ler olarak locate edilip kullanilabilir. Sag click yapamiyorsak alert bir JS Allert'dir ve switchTo() kullanilarak handle edilebilir.
+
     WebDriver driver;
 
 /*
