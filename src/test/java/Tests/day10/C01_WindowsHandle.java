@@ -1,13 +1,13 @@
-package Tests.day09;
+package Tests.day10;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import utilities.TestBase;
 
-public class C04_WindowHandle extends TestBase {
+public class C01_WindowsHandle extends TestBase {
 
-/*
+    /*
     ● Tests package’inda yeni bir class olusturun: C04_WindowHandle
     ● https://the-internet.herokuapp.com/windows adresine gidin.
     ● Sayfadaki textin "Opening a new window" olduğunu doğrulayın.
@@ -33,19 +33,5 @@ public class C04_WindowHandle extends TestBase {
 
         softAssert.assertTrue(driver.getTitle().equals("New Window"), "2. sayfanin title istenen degerden farkli.");
 
-
-
-
-
-
-
-
-
-
-        softAssert.assertAll();
-
-
-
     }
-
 }

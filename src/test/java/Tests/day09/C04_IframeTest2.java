@@ -20,7 +20,7 @@ import java.util.concurrent.TimeUnit;
     5) Ikinci iframe'deki (Jmeter Made Easy) linke (https://www.guru99.com/live seleniumproject.html) tıklayınız.
  */
 
-public class C05_IframeTest2 {
+public class C04_IframeTest2 {
 
     WebDriver driver;
 
