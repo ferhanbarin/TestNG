@@ -12,7 +12,7 @@ public class TestBase {
     // Abstract yaparak bu class'dan obje olusturulmasinin önüne geceriz.
 
     protected WebDriver driver;
-    // Biz TestBase class'i sadece extends ile inherit ederek kullanacagiz. Dolayisiyla olusturdugumuz driver variable'i icin protected acces modifier seciyoruz.
+    // Biz TestBase class'i sadece extends ile inherit ederek kullanacagiz. Dolayisiyla olusturdugumuz driver variable'i icin protected access modifier seciyoruz.
 
     @BeforeClass
     public void setup() {
