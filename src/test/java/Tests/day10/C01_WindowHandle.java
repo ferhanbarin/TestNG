@@ -9,7 +9,7 @@ import java.util.Set;
 
 public class C01_WindowHandle extends TestBase {
 
-    /*
+/*
     ● Tests package’inda yeni bir class olusturun: C04_WindowHandle
     ● https://the-internet.herokuapp.com/windows adresine gidin.
     ● Sayfadaki textin "Opening a new window" olduğunu doğrulayın.
@@ -18,7 +18,7 @@ public class C01_WindowHandle extends TestBase {
     ● Acilan yeni pencerenin sayfa başlığının (title) "New Window" oldugunu dogrulayin.
     ● Sayfadaki textin "New Window" olduğunu doğrulayın.
     ● Bir önceki pencereye geri döndükten sonra sayfa başlığının “The Internet” olduğunu doğrulayın.
- */
+*/
 
     @Test
     public void test() {
