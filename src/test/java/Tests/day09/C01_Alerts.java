@@ -61,7 +61,7 @@ public class C01_Alerts {
         driver.findElement(By.xpath("//button[@onclick='jsConfirm()']")).click();
         driver.switchTo().alert().dismiss();
 
-        Assert.assertFalse(driver.findElement(By.id("result")).getText().contains("result"));
+        Assert.assertFalse(driver.findElement(By.id("result")).getText().contains("successfuly"));
     }
 
     @Test
