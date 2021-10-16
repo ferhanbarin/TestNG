@@ -19,7 +19,7 @@ public class C01_Priority {
      2- Ebay ana sayfasina,
      3- Facebook ana sayfasina gitsin.
      Ve sayfa title'larini yazdirin.
- */
+*/
     // Priority yazmadigimiz method'larin (priority = 0) kabul eder. Priority olmayanlari kendi icinde siralayip olanlarin priority degerlerine uygun siralamada calistirir.
     @BeforeMethod
     public void setup() {
