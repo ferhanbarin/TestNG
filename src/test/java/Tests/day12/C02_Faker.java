@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 
@@ -48,6 +49,11 @@ public class C02_Faker extends TestBase {
                 .sendKeys(String.valueOf(faker.number().numberBetween(1, 30))).sendKeys(Keys.TAB)
                 .sendKeys("May").sendKeys(Keys.TAB)
                 .sendKeys(String.valueOf(faker.number().numberBetween(1970, 2000))).sendKeys(Keys.TAB).sendKeys(Keys.TAB)
-                .sendKeys(Keys.ARROW_RIGHT).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.ENTER).perform();
+                .sendKeys(Keys.ARROW_RIGHT).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.ENTER).perform();
+
+        Assert.assertTrue(driver.findElement(By.xpath("//input[@value='2']")).isSelected());
+
+        Assert.assertFalse(driver.findElement(By.xpath("//input[@value='1']")).isSelected());
+        Assert.assertFalse(driver.findElement(By.xpath("//input[@value='-1']")).isSelected());
     }
 }
