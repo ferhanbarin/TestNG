@@ -62,7 +62,6 @@ public class Q5 {
                 .dragAndDrop(seoul, southKorea)
                 .dragAndDrop(rome, italy)
                 .dragAndDrop(madrid, spain).perform();
-
     }
 
     @Test
