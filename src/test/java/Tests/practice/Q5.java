@@ -55,13 +55,14 @@ public class Q5 {
         WebElement unitedStates = driver.findElement(By.xpath("//div[@id='box103']"));
 
         Actions actions = new Actions(driver);
-        actions.dragAndDrop(oslo, norway).perform();
-        actions.dragAndDrop(stockholm, sweden).perform();
-        actions.dragAndDrop(washington, unitedStates).perform();
-        actions.dragAndDrop(copenhagen, denmark).perform();
-        actions.dragAndDrop(seoul, southKorea).perform();
-        actions.dragAndDrop(rome, italy).perform();
-        actions.dragAndDrop(madrid, spain).perform();
+        actions.dragAndDrop(oslo, norway)
+                .dragAndDrop(stockholm, sweden)
+                .dragAndDrop(washington, unitedStates)
+                .dragAndDrop(copenhagen, denmark)
+                .dragAndDrop(seoul, southKorea)
+                .dragAndDrop(rome, italy)
+                .dragAndDrop(madrid, spain).perform();
+
     }
 
     @Test
